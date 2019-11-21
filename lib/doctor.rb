@@ -19,9 +19,12 @@ class Doctor
   def new_appointment(date, patient)
     Appointment.new(date, patient, self)
   end
-
+  
   def patients
-    appointments.each do |appointment| puts appointment.patient
-    end
+    appointments.map {|appointment| appointment.patient}
   end
+  # def patients
+  #   appointments.each do |appointment| puts appointment.patient
+  #   end
+  # end
 end 
