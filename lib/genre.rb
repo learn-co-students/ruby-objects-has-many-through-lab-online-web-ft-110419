@@ -11,4 +11,7 @@ class Genre
   def songs
     Song.all
   end
+  def artists
+    songs.map {|song| song.artist}
+  end
 end

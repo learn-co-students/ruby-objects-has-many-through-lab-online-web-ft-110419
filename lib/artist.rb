@@ -16,7 +16,7 @@ attr_reader :name
     Song.new(name,self,genre)
   end
   def genres
-    songs.map do |song| song.genre binding.pry
+    songs.map do |song| song.genre
     end
   end
 end
